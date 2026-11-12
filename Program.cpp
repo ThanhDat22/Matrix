@@ -36,10 +36,10 @@ Number fibonacci_matrix(int n) {
     }
 
     Matrix<Number> F(2, 2);
-    F.set(0, 0, Number("1"));
-    F.set(0, 1, Number("1"));
-    F.set(1, 0, Number("1"));
-    F.set(1, 1, Number("0"));
+    F.set(0, 0, Number("1")); // f(n+1) of fibionacci sequence
+    F.set(0, 1, Number("1")); // f(n) of fibionacci sequence
+    F.set(1, 0, Number("1")); 
+    F.set(1, 1, Number("0")); // f(n-1) of fibionacci sequence
 
     // Calculates the nth power of the matrix
     Matrix<Number> fib = F.power(n);
